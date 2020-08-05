@@ -12,6 +12,7 @@ const App = () => {
   const [movieBackground, setMovieBackground] = React.useState("");
   const search = (searchTerm) => {
     if(searchTerm!==null) {
+      searchTerm = searchTerm.toLowerCase();
       var searchResults = movies.filter(item=>item.title.toLowerCase().includes(searchTerm));
       setResults(searchResults);
     }

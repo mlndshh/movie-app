@@ -3,7 +3,7 @@ import {Row, Col, Form, Card, Overlay, Button} from 'react-bootstrap';
 
 const Search = ({search, results, selectResult}) => {
     const target = React.useRef(null);
-    const [show, setShow] = React.useState(false);
+    const [show, setShow] = React.useState(true);
 
     const handleSearch = (event) => {
         search(event.target.value);
@@ -11,8 +11,8 @@ const Search = ({search, results, selectResult}) => {
         if(event.target.value==="") {
             setShow(false);
         }
-    }
 
+    }
     return(
         <div className="search">
             <Form className="searchField">
