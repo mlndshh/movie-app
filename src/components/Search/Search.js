@@ -20,7 +20,7 @@ const Search = ({search, results, selectResult}) => {
                 <Form.Control className="searchBox" type="text" placeholder="Search Movie Title..." ref={target} onChange={(event) => handleSearch(event) } autoComplete="off" />
               </Form.Group>
             </Form>
-            <Overlay className="searchResults" target={target.current} show={show} placement="bottom">
+            <Overlay className="searchResults" target={target.current} show={true} placement="bottom">
                 {({ placement, arrowProps, show: _show, popper, ...props }) => (
                 <div
                     {...props}
