@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Button, Container, Card} from 'react-bootstrap';
+import movies from './data/movies.json';
+import Search from './components/Search/Search';
+import Display from './components/Display/Display';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const [results, setResults] = React.useState([]);
+  const [movie, setMovie] = React.useState(null);
+  const [isMovie, setIsMovie] = React.useState(false);
+  const [movieBackground, setMovieBackground] = React.useState("");
+  const search = (searchTerm) => {
+    if(searchTerm!==null) {
+      var searchResults = movies.filter(item=>item.title.toLowerCase().includes(searchTerm));
+      setResults(searchResults);
+    }
+  };
+
+  const selectResult = (movie) => {
+    setIsMovie(true);
+    setMovie(movie);
+    setMovieBackground(`url(../../bg-images/${movie.id}.jpg)`);
+  };
+
+
+  return(
+    <>
+    <div className="background" style= {{backgroundImage: movieBackground}}>
+    <Container fluid className="appContainer">
+        <Search search={search} results={results} selectResult={selectResult}/>
+        {isMovie && <Display movie={movie} />}
+    </Container>
     </div>
+    </>
   );
 }
 

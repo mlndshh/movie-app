@@ -1,0 +1,210 @@
+[
+	{
+		"id": 1,
+		"title": "The Avengers",
+		"year": 2012,
+		"rating": 9,
+		"cast": [
+			"Robert Downey, Jr.",
+			"Chris Evans",
+			"Mark Ruffalo",
+			"Chris Hemsworth",
+			"Scarlett Johansson",
+			"Jeremy Renner",
+			"Tom Hiddleston",
+			"Clark Gregg",
+			"Cobie Smulders",
+			"Stellan Skarsgård",
+			"Samuel L. Jackson"
+		],
+		"genres": [
+			"Superhero"
+		],
+		"description": "Nick Fury is compelled to launch the Avengers Initiative when Loki poses a threat to planet Earth. His squad of superheroes put their minds together to accomplish the task."
+	},
+	{
+		"id": 2,
+		"title": "Avengers: Age of Ultron",
+		"year": 2015,
+		"rating": 8,
+		"cast": [
+			"Robert Downey, Jr.",
+			"Chris Evans",
+			"Chris Hemsworth",
+			"Mark Ruffalo"
+		],
+		"genres": [
+			"Action"
+		],
+		"description": "Tony Stark builds an artificial intelligence system named Ultron with the help of Bruce Banner. When the sentient Ultron makes plans to wipe out the human race, the Avengers set out to stop him."
+	},
+	{
+		"id": 3,
+		"title": "The Conjuring 2",
+		"year": 2016,
+		"rating": 6,
+		"cast": [
+			"Vera Farmiga",
+			"Patrick Wilson"
+		],
+		"genres": [
+			"Supernatural",
+			"Horror"
+		],
+		"description": "Peggy, a single mother of four children, seeks the help of occult investigators Ed and Lorraine Warren when she and her children witness strange, paranormal events in their house."
+	},
+	{
+		"id": 4,
+		"title": "Get Out",
+		"year": 2017,
+		"rating": 10,
+		"cast": [
+			"Daniel Kaluuya",
+			"Allison Williams",
+			"Catherine Keener",
+			"Bradley Whitford",
+			"Caleb Landry Jones"
+		],
+		"genres": [
+			"Horror"
+		],
+		"description": "Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway. Although they seem normal at first, he is not prepared to experience the horrors ahead."
+	},
+	{
+		"id": 5,
+		"title": "Iron Man",
+		"year": 2008,
+		"rating": 7,
+		"cast": [
+			"Robert Downey, Jr.",
+			"Terrence Howard",
+			"Gwyneth Paltrow",
+			"Jeff Bridges"
+		],
+		"genres": [
+			"Superhero"
+		],
+		"description": "When Tony Stark, an industrialist, is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces to save the world."
+	},
+	{
+		"id": 6,
+		"title": "Star Wars: The Last Jedi",
+		"year": 2017,
+		"rating": 6,
+		"cast": [
+			"Mark Hamill",
+			"Carrie Fisher",
+			"Adam Driver",
+			"Daisy Ridley",
+			"John Boyega",
+			"Oscar Isaac",
+			"Lupita Nyong'o",
+			"Domhnall Gleeson",
+			"Benicio del Toro",
+			"Laura Dern",
+			"Anthony Daniels",
+			"Gwendoline Christie",
+			"Andy Serkis"
+		],
+		"genres": [
+			"Action",
+			"Adventure",
+			"Fantasy",
+			"Science Fiction"
+		],
+		"description": "Rey seeks to learn the ways of the Jedi under Luke Skywalker, its remaining member, to reinvigorate the Resistance's war against the First Order."
+	},
+	{
+		"id": 7,
+		"title": "It",
+		"year": 2017,
+		"rating": 9,
+		"cast": [
+			"Bill Skarsgård",
+			"Jaeden Lieberher",
+			"Finn Wolfhard",
+			"Jack Dylan Grazer",
+			"Sophia Lillis",
+			"Wyatt Oleff",
+			"Chosen Jacobs",
+			"Jeremy Ray Taylor"
+		],
+		"genres": [
+			"Horror",
+			"Fantasy",
+			"Drama"
+		],
+		"description": "Seven helpless and bullied children are forced to face their worst nightmares when Pennywise, a shape-shifting clown, reappears. The clown, an ancient evil torments children before feeding on them."
+	},
+	{
+		"id": 8,
+		"title": "Harry Potter and the Deathly Hallows: Part 1",
+		"year": 2010,
+		"rating": 8,
+		"cast": [
+			"Daniel Radcliffe",
+			"Rupert Grint",
+			"Emma Watson",
+			"Helena Bonham Carter",
+			"Robbie Coltrane",
+			"Warwick Davis",
+			"Ralph Fiennes",
+			"Michael Gambon",
+			"Brendan Gleeson",
+			"Richard Griffiths",
+			"John Hurt",
+			"Jason Isaacs",
+			"Alan Rickman",
+			"Fiona Shaw",
+			"Timothy Spall",
+			"Imelda Staunton",
+			"David Thewlis",
+			"Julie Walters"
+		],
+		"genres": [
+			"Action",
+			"Adventure",
+			"Fantasy"
+		],
+		"description": "After Voldemort takes over the Ministry of Magic, Harry, Ron and Hermione are forced into hiding. They try to decipher the clues left to them by Dumbledore to find and destroy Voldemort's Horcruxes."
+	},
+	{
+		"id": 9,
+		"title": "Ocean's Eleven",
+		"year": 2001,
+		"rating": 8,
+		"cast": [
+			"George Clooney",
+			"Matt Damon",
+			"Brad Pitt",
+			"Andy García",
+			"Julia Roberts",
+			"Don Cheadle",
+			"Casey Affleck",
+			"Elliott Gould",
+			"Bernie Mac",
+			"Carl Reiner",
+			"Casey Affleck",
+			"Scott Caan"
+		],
+		"genres": [
+			"Crime"
+		],
+		"description": "Danny Ocean, a gangster, assembles a group of eleven people in an effort to steal money from three popular casinos in Las Vegas owned by his rival, Terry Benedict."
+	},
+	{
+		"id": 10,
+		"title": "The Others",
+		"year": 2001,
+		"rating": 8,
+		"cast": [
+			"Nicole Kidman",
+			"Alakina Mann",
+			"Christopher Eccleston"
+		],
+		"genres": [
+			"Science Fiction"
+		],
+		"description": "Grace moves into a new house with her two photosensitive children in Jersey. When a series of inexplicable events occur, Grace starts believing that her house is haunted."
+	}
+]

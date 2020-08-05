@@ -1,0 +1,98 @@
+//add overrides before importing.
+
+@font-face { 
+  font-family: 'Custom';
+  font-style: normal;
+  src: url('./fonts/Oswald-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: 'Custom' !important;
+}
+
+$card-bg: rgba(0,0,0,0.6);
+$card-color: #FFF; //not working for some reason?
+$body-bg: #000;
+.movieCard {
+  width:80%;
+  margin:auto;
+  h1 {
+    margin-top:2%;
+    margin-bottom:2%;
+  }
+  h3, h4 {
+    margin-bottom:2%;
+  }
+}
+
+h1 {
+  color:#FFF;
+  text-transform: uppercase;
+  font-size:50px !important;
+}
+h3 {
+  color: #32CD32;
+}
+h4 {
+  color: white;
+}
+h5 {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) { 
+  .movieInfo {
+    margin-left:5%;
+    margin-right:5%;
+  }
+  h1 {
+    margin-top:10px !important;
+    font-size:30px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+}
+
+
+.searchField {
+  position: relative !important;
+  float:right;
+  margin-right:10%;
+  margin-top:1%;
+  width:40%;
+}
+
+.searchBox {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  border-bottom: solid;
+  border-color:white !important;
+  box-shadow: none;
+}
+
+.searchResults {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 10px;
+  color: white !important;
+  border-radius: 3;
+}
+
+.p {
+  color:white;
+}
+
+.background {
+  background-size: auto;
+  background-position: top center;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
