@@ -15,8 +15,11 @@ $card-bg: rgba(0,0,0,0.6);
 $card-color: #FFF; //not working for some reason?
 $body-bg: #000;
 .movieCard {
-  width:80%;
-  margin:auto;
+  position:fixed;
+  width:70%;
+  margin-left:15%;
+  margin-right:15%;
+  top:30px;
   h1 {
     margin-top:2%;
     margin-bottom:2%;
@@ -24,6 +27,7 @@ $body-bg: #000;
   h3, h4 {
     margin-bottom:2%;
   }
+
 }
 
 h1 {
@@ -62,9 +66,21 @@ h5 {
 .searchField {
   position: relative !important;
   float:right;
-  margin-right:10%;
+  margin-right:15%;
   margin-top:1%;
   width:40%;
+}
+.resultOverlay {
+  width:40%;
+}
+@media only screen and (max-width: 768px) { 
+  .searchField {
+    width:70%;
+  }
+  .resultOverlay {
+    width:70%;
+    margin-left:4%
+  }
 }
 
 .searchBox {
@@ -93,7 +109,27 @@ h5 {
 .background {
   background-size: auto;
   background-position: top center;
+  height:100vh !important;
 }
+
+@media only screen and (max-width: 768px) { 
+
+  .background {
+    height: 100% !important;
+  }
+}
+.cardRow {
+  height:100%;
+}
+.cardColumn {
+  height:100%;
+}
+.movieImage {
+  max-width:100%;
+  max-height:100%;
+  margin:auto;
+}
+
 
 @import "~bootstrap/scss/bootstrap";
 

@@ -9,9 +9,9 @@ const Display = ({movie}) => {
     genres = genres.slice(0, genres.length-2);
     return(
         <Card className="movieCard">
-            <Row>
-                <Col sm={4}><img src={imageSource} style={{width:'100%'}}/></Col>
-                <Col className="movieInfo">
+            <Row className="cardRow">
+                <Col sm={4} className="cardColumn"><img src={imageSource} className="movieImage"/></Col>
+                <Col className="movieInfo cardColumn">
                     <h1>{movie.title}</h1>
                     <h3>Description: </h3>
                     <h4>{movie.description}</h4>
