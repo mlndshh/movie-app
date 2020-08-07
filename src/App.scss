@@ -66,6 +66,7 @@ h5 {
 }
 .resultOverlay {
   width:30%;
+  margin-left:10px !important;
 }
 @media only screen and (max-width: 768px) { 
   .searchField {
@@ -92,6 +93,7 @@ h5 {
   border-bottom: solid;
   border-color:white !important;
   box-shadow: none;
+  
 }
 
 .searchResults {
