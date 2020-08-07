@@ -8,14 +8,13 @@ const Display = ({movie}) => {
     movie.genres.map(genre => genres = genres.concat(`${genre}, `));
     genres = genres.slice(0, genres.length-2);
     return(
-        <Card className="movieCard">
-            <Row className="cardRow">
-                <Col sm={4} className="cardColumn"><img src={imageSource} className="movieImage"/></Col>
-                <Col className="movieInfo cardColumn">
-                    <h1>{movie.title}</h1>
-                    <h3>Description: </h3>
-                    <h4>{movie.description}</h4>
-                    <Row>
+        <Row className="displayRow">
+            <Col sm={4} className="imgCol"><img src={imageSource} className="image"/></Col>
+            <Col className="textCol">
+                <h1>{movie.title}</h1>
+                <h3>Description: </h3>
+                <h4>{movie.description}</h4>
+                <Row>
                         <Col>
                             <h3>Genre: </h3>
                             <h5>{genres}</h5>
@@ -24,13 +23,11 @@ const Display = ({movie}) => {
                             <h3>Original Release: </h3>
                             <h5>{movie.year}</h5>
                         </Col>
-                    </Row>
-                    
+                </Row>
                     <h3>Rating: </h3>
                     <h5>{movie.rating}/10</h5>
-                </Col>
-            </Row>
-        </Card>
+            </Col>
+        </Row>
     );
 }
 

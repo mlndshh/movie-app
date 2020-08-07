@@ -22,13 +22,14 @@ const App = () => {
     setIsMovie(true);
     setMovie(movie);
     setMovieBackground(`url(../../bg-images/${movie.id}.jpg)`);
+    document.body.style.backgroundImage= `url(../../bg-images/${movie.id}.jpg)`;
   };
 
 
   return(
     <>
-    <div className="background" style= {{backgroundImage: movieBackground}}>
-    <Container fluid className="appContainer">
+    <div >
+    <Container fluid>
         <Search search={search} results={results} selectResult={selectResult}/>
         {isMovie && <Display movie={movie} />}
     </Container>

@@ -9,17 +9,15 @@
 body {
   font-family: 'Custom' !important;
   height:100%;
+  background-size: auto;
 }
 
-$card-bg: rgba(0,0,0,0.6);
-$card-color: #FFF; //not working for some reason?
 $body-bg: #000;
 .movieCard {
-  position:fixed;
-  width:70%;
-  margin-left:15%;
-  margin-right:15%;
-  top:30px;
+  height:70vh;
+  width:80vw;
+  margin-left:9vw;
+  margin-right:9vw;
   h1 {
     margin-top:2%;
     margin-bottom:2%;
@@ -46,10 +44,6 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) { 
-  .movieInfo {
-    margin-left:5%;
-    margin-right:5%;
-  }
   h1 {
     margin-top:10px !important;
     font-size:30px !important;
@@ -66,20 +60,25 @@ h5 {
 .searchField {
   position: relative !important;
   float:right;
-  margin-right:15%;
+  margin-right:20vw;
   margin-top:1%;
-  width:40%;
+  width:30%;
 }
 .resultOverlay {
-  width:40%;
+  width:30%;
 }
 @media only screen and (max-width: 768px) { 
   .searchField {
-    width:70%;
+    float:right;
+    margin-right:1vw;
+    width:65vw;
   }
   .resultOverlay {
-    width:70%;
-    margin-left:4%
+    width:65vw;
+    left:20vw;
+  }
+  .search {
+    padding-top:5%;
   }
 }
 
@@ -112,23 +111,56 @@ h5 {
   height:100vh !important;
 }
 
-@media only screen and (max-width: 768px) { 
 
+.displayRow {
+  width:60vw;
+  max-height:70vh;
+  position: fixed;
+  left:20vw;
+  top:15vh;
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+
+@media only screen and (max-width: 768px) { 
+  .displayRow {
+    position:relative;
+    width:90vw;
+    left:5vw;
+    top:0;
+    background-color: rgba(0,0,0,0.6) !important;
+  }
   .background {
-    height: 100% !important;
+    position:static;
+    height:100vh !important;
+    background-size: auto;
+    background-position: top center;
   }
 }
-.cardRow {
-  height:100%;
+
+
+
+.image {
+  width:100%;
 }
-.cardColumn {
-  height:100%;
+.imgCol {
+  padding-left:0 !important;
+  padding-right:0 !important;
 }
-.movieImage {
-  max-width:100%;
-  max-height:100%;
-  margin:auto;
+
+.textCol {
+  padding-top:2%;
+  padding-left:2% !important;
 }
+
+@media only screen and (max-width: 768px) {  
+  .textCol {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 4%;
+  margin-bottom: 4%;
+  }
+}
+
 
 
 @import "~bootstrap/scss/bootstrap";
