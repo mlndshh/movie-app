@@ -38,6 +38,20 @@ h5 {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .displayRow{
+    margin-left:1vw !important;
+    margin-right:1vw !important;
+    padding-bottom:2vh !important;
+    margin-bottom:2vh !important;
+  }
+
+  .searchDiv {
+    margin-top:5%;
+  }
+  
+
+}
 
 .childDiv {
   flex: 1;
@@ -69,14 +83,17 @@ h5 {
 
 .search {
   width:50%;
-  margin-left: 50%;
+  margin-left:50%;
 }
 
 .resultOverlay {
   background-color: rgba(0, 0, 0, 0.6) !important; 
-  width:50%;
+  width:20%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
-
-
+.imgCol {
+  padding:0 !important;
+}
 @import "~bootstrap/scss/bootstrap";
