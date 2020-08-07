@@ -27,7 +27,6 @@ const Search = ({search, results, selectResult}) => {
                     style={{
                     ...props.style,
                     color: 'white',
-                    
                     }}
                     className="resultOverlay"
                 >

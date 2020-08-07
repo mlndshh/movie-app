@@ -28,12 +28,16 @@ const App = () => {
 
   return(
     <>
-    <div >
-    <Container fluid>
-        <Search search={search} results={results} selectResult={selectResult}/>
-        {isMovie && <Display movie={movie} />}
+    <Container>
+    <div className="parentDiv">
+        <div className="childDiv">
+        <div className="searchDiv">
+          <Search search={search} results={results} selectResult={selectResult}/>
+        </div>
+          {isMovie && <Display movie={movie} />}
+        </div>
+      </div>
     </Container>
-    </div>
     </>
   );
 }
