@@ -25,6 +25,21 @@ const App = () => {
     document.body.style.backgroundImage= `url(../../bg-images/${movie.id}.jpg)`;
   };
 
+  React.useEffect(() => {
+    if(isMovie) {
+      document.getElementById("display").style.visibility = "visible";
+    document.body.style.backgroundImage = `url(../../bg-images/${movie.id}.jpg)`;
+    }
+    else {
+      document.getElementById("display").style.visibility = "hidden";
+      document.body.style.backgroundImage = "none";
+    }
+  }, [isMovie])
+
+  React.useEffect(() => {
+    
+  }, [isMovie])
+
 
   return(
     <>
@@ -34,7 +49,7 @@ const App = () => {
         <div className="searchDiv">
           <Search search={search} results={results} selectResult={selectResult}/>
         </div>
-          {isMovie && <Display movie={movie} />}
+          {isMovie ?  <Display movie={movie} /> : <Display movie={movies[0]} />}
         </div>
       </div>
     </Container>

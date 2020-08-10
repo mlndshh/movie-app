@@ -8,7 +8,7 @@ const Display = ({movie}) => {
     movie.genres.map(genre => genres = genres.concat(`${genre}, `));
     genres = genres.slice(0, genres.length-2);
     return(
-        <Row className="displayRow">
+        <Row className="displayRow" id="display">
             <Col sm={4} className="imgCol"><img src={imageSource} className="image"/></Col>
             <Col className="textCol">
                 <h1>{movie.title}</h1>
