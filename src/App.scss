@@ -82,15 +82,27 @@ h5 {
 }
 
 .search {
-  width:50%;
-  margin-left:50%;
+  margin-left: auto;
+  margin-right: 0;
+  width:400px;
 }
 
 .resultOverlay {
   background-color: rgba(0, 0, 0, 0.6) !important; 
-  width:20%;
-  padding-left: 1%;
+  width:400px;
+  padding-left: 0.5%;
   padding-right: 1%;
+}
+
+@media only screen and (max-width: 767px) { 
+  .search {
+    width:90vw;
+  }
+  .resultOverlay {
+    width:90vw;
+    padding-left:4%;
+  }
+  
 }
 
 .imgCol {
